@@ -41,5 +41,5 @@ Comment=Select your conky
 TryExec=am-conkyzen
 Exec=am-conkyzen
 Icon=conky
-Categories=GTK;Utility;TrayIcon;
+Categories=GTK;Utility;TrayIcon;XFCE;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
 StartupNotify=false
