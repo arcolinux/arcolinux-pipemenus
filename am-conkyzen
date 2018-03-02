@@ -240,7 +240,7 @@ while ! [[ $RET ]];do
     fi
     if ! [[ $RET ]];then  # No conkys chosen
         MSG="Nothing chosen.\n\nKill any running Conkys\nand exit?"
-        $DLG $WINICON --title="Conky Chooser" --text="$MSG" $OK $CANCEL
+        $DLG $WINICON --title="Conkyzen" --text="$MSG" $OK $CANCEL
         if [[ $? = 1 ]];then
             # restore previous saved-sessions file
             mv "$SESSIONS.bkp" "$SESSIONS"

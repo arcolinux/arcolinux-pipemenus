@@ -77,7 +77,7 @@ getSessions(){  # read any saved sessions from save-sessions file
 
 loadChooserMenu(){
     if type "$CZEN" &>/dev/null;then  # am-conkyzen script found
-        menuItem "Conky Chooser" "$CZEN"
+        menuItem "Conkyzen" "$CZEN"
     fi
 }
 
