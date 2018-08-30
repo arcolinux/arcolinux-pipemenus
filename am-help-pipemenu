@@ -81,5 +81,6 @@ menuSubmenuEnd
 menuSeparator 'Wikis'
 menuItem 'Arch Wiki' 'exo-open "https://wiki.archlinux.org"'
 menuItem 'Termite' 'exo-open "https://wiki.archlinux.org/index.php/termite"'
+menuItem 'Neofetch' 'exo-open "https://github.com/dylanaraps/neofetch"'
 
 menuEnd
