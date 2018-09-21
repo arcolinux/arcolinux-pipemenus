@@ -52,8 +52,10 @@ menuItem 'Information about this release' 'exo-open "https://arcolinux.info/arco
 menuSeparator 'ArcoLinux Online'
 menuSeparator
 menuItem 'ArcoLinux Info' 'exo-open "https://arcolinux.info/"'
-menuItem 'ArcoLinux Iso' 'exo-open "http://arcolinux.com"'
-menuItem 'ArcoLinuxD Iso' 'exo-open "http://arcolinuxd.com"'
+menuItem 'ArcoLinux' 'exo-open "http://arcolinux.com"'
+menuItem 'ArcoLinuxD' 'exo-open "http://arcolinuxd.com"'
+menuItem 'ArcoLinuxB' 'exo-open "http://arcolinuxb.com"'
+menuItem 'ArcoLinuxIso' 'exo-open "http://arcolinuxiso.com"'
 menuItem 'ArcoLinux Forum' 'exo-open "http://arcolinuxforum.com"'
 menuItem 'ArcoLinux Facebook' 'exo-open "https://www.facebook.com/arcolinuxd"'
 menuItem 'ArcoLinux Google+' 'exo-open "https://plus.google.com/u/0/communities/104398992023863502986"'
