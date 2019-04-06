@@ -72,7 +72,6 @@ menuItem 'Conky Configuration' 'exo-open "http://conky.sourceforge.net/config_se
 menuSubmenuEnd
 
 menuSubmenu 'ThemesWWW' 'Theme Resources'
-menuItem 'Eye Candy Linux DeviantArt' 'exo-open "http://eye-candy-linux.deviantart.com/"'
 menuItem 'Box-Look.org' 'exo-open "http://www.box-look.org"'
 menuItem 'Gnome-Look.org' 'exo-open "http://gnome-look.org/"'
 menuSubmenuEnd
