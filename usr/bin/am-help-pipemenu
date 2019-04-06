@@ -75,7 +75,6 @@ menuSubmenu 'ThemesWWW' 'Theme Resources'
 menuItem 'Eye Candy Linux DeviantArt' 'exo-open "http://eye-candy-linux.deviantart.com/"'
 menuItem 'Box-Look.org' 'exo-open "http://www.box-look.org"'
 menuItem 'Gnome-Look.org' 'exo-open "http://gnome-look.org/"'
-menuItem 'Eye Candy Linux Google+' 'exo-open "https://plus.google.com/u/0/communities/104794997718869399105"'
 menuSubmenuEnd
 
 menuSeparator 'Wikis'
