@@ -22,7 +22,7 @@ USAGE="\vUSAGE:\tam-conky-session [OPTION(S)]...FILES
 \tRun specified sessionfile at login:
 \t\"am-conky-session --autostart /path/to/sessionfile\"
 \v\tRun default sessionfile, without killing running conkys:
-\t\"al-conky-session --autostart\"
+\t\"am-conky-session --autostart\"
 \v\tRun several conky sessionfiles (option to kill conkys first):
 \t\"am-conky-session --default sessionfile1 sessionfile2 etc\""
 
