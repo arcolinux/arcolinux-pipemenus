@@ -29,7 +29,7 @@ USAGE="\vUSAGE:\tal-conky-session [OPTION(S)]...FILES
 ### DIALOG VARIABLES
 DLG="yad --center --undecorated --borders=20 "
 TITLE="ArcoLinux Conky Session"
-WINICON="--window-icon=distributor-logo-bunsenlabs"
+WINICON="--window-icon=distributor-logo-arcolinux"
 OK="--button=OK:0"
 CANCEL="--button=gtk-cancel:1"
 
