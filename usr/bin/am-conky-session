@@ -72,11 +72,11 @@ findArgs(){     # get command args (switches & sessionfile paths)
 
 killConkys(){
     if pidof conky &>/dev/null; then
-        MSG="Kill running conkys first?"
-        $DLG $WINICON --title="$TITLE" --text="$MSG"
-        if (( $? == 0 )); then            # kill all conkys
+        #MSG="Kill running conkys first?"
+        #$DLG $WINICON --title="$TITLE" --text="$MSG"
+        #if (( $? == 0 )); then            # kill all conkys
             killall conky && sleep 0.2s
-        fi
+        #fi
     fi
 }
 
