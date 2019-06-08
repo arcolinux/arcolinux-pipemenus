@@ -7,12 +7,12 @@
 #   To start the default conky session at login, add the following line
 #   to config/openbox/autostart:
 #
-#      (sleep 2s && al-conky-session --autostart) &
+#      (sleep 2s && am-conky-session --autostart) &
 #
 ########################################################################
 CONKYPATH="$HOME/.config/conky"
 SESSIONFILE="$CONKYPATH/conky-sessionfile"
-USAGE="\vUSAGE:\tal-conky-session [OPTION(S)]...FILES
+USAGE="\vUSAGE:\tam-conky-session [OPTION(S)]...FILES
 \n\tWith no command argument, the script uses the default
 \t\"\$CONKYPATH/conky-session\" sessionfile
 \vOPTIONS:\n\t--default\t: specify default sessionfile
@@ -20,11 +20,11 @@ USAGE="\vUSAGE:\tal-conky-session [OPTION(S)]...FILES
 \tpath/to/sessionfile1  /path/to/sessionfile2 etc
 \vEXAMPLES:
 \tRun specified sessionfile at login:
-\t\"al-conky-session --autostart /path/to/sessionfile\"
+\t\"am-conky-session --autostart /path/to/sessionfile\"
 \v\tRun default sessionfile, without killing running conkys:
 \t\"al-conky-session --autostart\"
 \v\tRun several conky sessionfiles (option to kill conkys first):
-\t\"al-conky-session --default sessionfile1 sessionfile2 etc\""
+\t\"am-conky-session --default sessionfile1 sessionfile2 etc\""
 
 ### DIALOG VARIABLES
 DLG="yad --center --undecorated --borders=20 "
@@ -49,7 +49,7 @@ findArgs(){     # get command args (switches & sessionfile paths)
             i=$(($i+1))
         fi
     done
-    # check if sessionfiles were passed to al-conky-session
+    # check if sessionfiles were passed to am-conky-session
     if (( ${#rawArr[@]} != 0 )); then
         # remove duplicate args
         sessArr=(`printf "%s\n" "${rawArr[@]}" | sort -u`)
@@ -59,7 +59,7 @@ findArgs(){     # get command args (switches & sessionfile paths)
         for SESSION in "${sessArr[@]}";do # run the conkys in the sessionfiles
             source "$SESSION"
         done
-    else    # --autostart used, but no sessionfiles passed to al-conkyzen
+    else    # --autostart used, but no sessionfiles passed to am-conkyzen
         if [[ -f $SESSIONFILE ]] && (( $NOKILL == 1 )); then
             source "$SESSIONFILE"   # use conky-sessionfile
         else
