@@ -31,7 +31,7 @@ function checkWrongArguments() {
 	-p)
 	echo "Previous conky will be selected" ;;
 	*)
-	echo "You can only choose -n or -v" ; exit 1 ;;
+	echo "You can only choose -n or -p" ; exit 1 ;;
 	esac
 }
 
@@ -46,7 +46,7 @@ function deleteEmptyConkyList() {
 function conkylistExists() {
 	if [ ! -f $WDIR/.conky_list.txt ]
 	then
-		echo "Created new .conky_list.txt because it did not exist" 
+		echo "Created new .conky_list.txt because it did not exist"
 		find $WDIR -name "*.conkyrc" | grep -v backup | grep -v Trash >.conky_list.txt
 	fi
 }
@@ -71,7 +71,7 @@ function checkNewConkies() {
 	CHECK_TOTAL_CONKYS=`find /home/$USER/.config/conky -name "*.conkyrc" | wc -l | cut -d" " -f1`
 	if [ $TOTAL_CONKYS != $CHECK_TOTAL_CONKYS ]
 	then
-		echo "Created new .conky_list.txt because of new conkies" 
+		echo "Created new .conky_list.txt because of new conkies"
 		find $WDIR -name "*.conkyrc" | grep -v backup | grep -v Trash >.conky_list.txt
 		countTotalConkies
 	fi
