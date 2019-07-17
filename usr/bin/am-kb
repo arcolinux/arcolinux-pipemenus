@@ -168,7 +168,7 @@ if __name__ == "__main__":
     if gui:     # output formatted keybinds text in text window
         dlg = "yad --text-info --title='Openbox Keybinds' "
         dlg = dlg + "--window-icon=distributor-logo-arcolinux "
-        dlg = dlg + "--filename=$HOME/.config/openbox/kbinds.txt "
+        dlg = dlg + "< $HOME/.config/openbox/kbinds.txt "
         dlg = dlg + "--width=700 --height=700 --fontname=Monaco "
         dlg = dlg + "--button=yad-close"
         os.system(dlg)
