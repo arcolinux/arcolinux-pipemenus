@@ -169,10 +169,10 @@ DIALOG="yad --center --undecorated --borders=20 --window-icon=distributor-logo-a
 DIALOGDEC="yad --center  --borders=20 --window-icon=distributor-logo-arcolinux"
 TITLE="ALOB Configuration Manager"
 T="--text="
-OK="--button=OK:0"
-CANCEL="--button=gtk-cancel:1"
-EXIT="--button=gtk-quit:1"
-CLOSE="--button=gtk-close:1"
+OK="--button=yad-ok:0"
+CANCEL="--button=yad-cancel:1"
+EXIT="--button=yad-quit:1"
+CLOSE="--button=yad-close:1"
 TXTINTRO='<big><b>ArcoLinux Openbox Configuration Manager</b></big>
 
 
@@ -214,7 +214,7 @@ function Intro(){
         INTRO=$($DIALOGDEC \
         --title="$TITLE" \
         "$T$TXTINTRO" \
-        --button="Save Settings:0" --button="gtk-close:1" \
+        --button="Save Settings:0" --button="yad-close:1" \
         --borders=30 \
         2>/dev/null )
     fi
@@ -1006,9 +1006,9 @@ function ViewRestoreDialog(){  #   Display saved theme collections
                 d=${d##*/}  # get directory name
                 # Get name of current session, set icon for TRUE/FALSE
                 if [[ $SET = $d ]];then
-                    setARR[$i]="gtk-yes"
+                    setARR[$i]="yad-yes"
                 else
-                    setARR[$i]="gtk-no"
+                    setARR[$i]="yad-no"
                 fi
                 IMGTHUMB="None"     # Placeholder if no thumbnail found
                 f="$dir"/*"-thumb.jpg"
@@ -1041,7 +1041,7 @@ function restoreSettings(){
             --separator=" " \
             --button="About:5" \
             --button="View image:4" --button="Add New:3" \
-            --button="Delete:2" --button="Restore:0" --button="gtk-quit:1" \
+            --button="Delete:2" --button="Restore:0" --button="yad-quit:1" \
             --always-print-result \
             --width=$W --height=$H --center --image-preview \
             --expand-column=3 \
@@ -1095,7 +1095,7 @@ function restoreSettings(){
             3)  setName
                 saveSettings
                 getScrot
-                $DIALOG --text="Settings were saved as <b>$ANS</b>" --image="gtk-save" "$OK" 2>/dev/null
+                $DIALOG --text="Settings were saved as <b>$ANS</b>" --image="yad-save" "$OK" 2>/dev/null
                 if [[ -d $CONFIGDIR-BKP ]];then
                     rm -rf "$CONFIGDIR-BKP"
                     echo -e "\n  Temporary $CONFIGDIR deleted\n"

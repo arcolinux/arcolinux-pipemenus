@@ -20,8 +20,8 @@ CONKYPATH="$HOME/.config/conky"
 DLGDEC="yad --center  --borders=20 --width=400 --height=500 "
 TITLE="ArcoLinux Conky Edit"
 WINICON="--window-icon=distributor-logo-arcolinux"
-OK="--button=OK:0"
-CANCEL="--button=gtk-cancel:1"
+OK="--button=yad-ok:0"
+CANCEL="--button=yad-cancel:1"
 
 ########## FUNCTIONS ###################################################
 

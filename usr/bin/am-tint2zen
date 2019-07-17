@@ -48,8 +48,8 @@ USAGE="\v\tUSAGE:\n\tWith no command argument, the script uses the chosen
 DLGDEC="yad --center --borders=20 "
 TITLE="ArcoLinux Tint2 Manager"
 WINICON="--window-icon=distributor-logo-arcolinux"
-OK="--button=OK:0"
-CANCEL="--button=gtk-cancel:1"
+OK="--button=yad-ok:0"
+CANCEL="--button=yad-cancel:1"
 ########################################################################
 
 tintRunning(){

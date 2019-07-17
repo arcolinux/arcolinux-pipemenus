@@ -30,8 +30,8 @@ USAGE="\vUSAGE:\tam-conky-session [OPTION(S)]...FILES
 DLG="yad --center --undecorated --borders=20 "
 TITLE="ArcoLinux Conky Session"
 WINICON="--window-icon=distributor-logo-arcolinux"
-OK="--button=OK:0"
-CANCEL="--button=gtk-cancel:1"
+OK="--button=yad-ok:0"
+CANCEL="--button=yad-cancel:1"
 
 ########################################################################
 

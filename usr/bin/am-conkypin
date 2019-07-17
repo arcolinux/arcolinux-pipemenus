@@ -171,7 +171,7 @@ and rerun the script."
 
 
 $DIALOG --text="Click 'Select Conky' to pick a conky.\n\nThen use the 'xwininfo' cursor on the chosen conky\nto record its position." \
-     --button="Select Conky:0" --button="gtk-cancel:1"
+     --button="Select Conky:0" --button="yad-cancel:1"
 
 if (( $? == 0 ));then
     getStart
@@ -181,7 +181,7 @@ else
 fi
 
 $DIALOG --text="Move the Conky to the desired location\nwith Alt+L-mousebutton Drag.\n\nClick 'OK' to set the new position." \
-     --button="OK:0" --button="gtk-cancel:1"
+     --button="OK:0" --button="yad-cancel:1"
 
 if (( $? == 0 ));then
     getFinish

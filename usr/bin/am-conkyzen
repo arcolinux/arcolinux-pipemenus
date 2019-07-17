@@ -62,8 +62,8 @@ DLG="yad --center --undecorated --borders=20 "
 DLGDEC="yad --center  --borders=20 "
 TITLE="ArcoLinux Conky Manager"
 WINICON="--window-icon=distributor-logo-arcolinux"
-OK="--button=OK:0"
-CANCEL="--button=gtk-cancel:1"
+OK="--button=yad-ok:0"
+CANCEL="--button=yad-cancel:1"
 
 ########## FUNCTIONS ###################################################
 conkyRunning(){    # find running conkys

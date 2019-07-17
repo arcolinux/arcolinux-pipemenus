@@ -140,7 +140,7 @@ checkHelpfile(){
     --title='ArcoLinux Conky Manager Help' \
     --filename=$HELPFILE --fontname=Monospace \
     --width=650 --height=700 \
-    --button=OK:0"
+    --button=yad-ok:0"
     if [[ -e $HELPFILE ]];then
         menuItem "Conky Manager Help" "$DLG"
     fi

@@ -170,5 +170,5 @@ if __name__ == "__main__":
         dlg = dlg + "--window-icon=distributor-logo-arcolinux "
         dlg = dlg + "--filename=$HOME/.config/openbox/kbinds.txt "
         dlg = dlg + "--width=700 --height=700 --fontname=Monaco "
-        dlg = dlg + "--button=gtk-close"
+        dlg = dlg + "--button=yad-close"
         os.system(dlg)
