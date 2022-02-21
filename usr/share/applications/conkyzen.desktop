@@ -40,6 +40,6 @@ Name[zh_TW]=ArcoLinux Conkyzen
 Comment=Select your conky
 TryExec=am-conkyzen
 Exec=am-conkyzen
-Icon=conky
+Icon=conkyzen
 Categories=GTK;Utility;TrayIcon;XFCE;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
 StartupNotify=false
