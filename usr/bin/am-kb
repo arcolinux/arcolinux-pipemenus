@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 #    am-kb: a script to read openbox's rc.xml and write out the keybinds
@@ -162,7 +162,7 @@ if __name__ == "__main__":
     else:
         msg = "\nCan't open rc.xml for parsing\n\
         Check the filepath given: " + rc_fpath + "\n"
-        print msg
+        print(msg)
         sys.exit(1)
 
     if gui:     # output formatted keybinds text in text window
